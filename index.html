@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>단지투어</title>
+  </head>
+  <body>
+    <div class="MM02">
+      <div class="MM02_apartImg_box" id="apartImg-box-js">
+        <img class="apart_img" src="./assects/img/complex.jpg" />
+
+        <!-- 상단 핀 -->
+        <div class="marker_content_1" id="marker-content-1-js">
+          <img src="./assects/img/marker.svg" class="pin_1" alt="상단 핀1" />
+          <div class="marker__box1" id="marker-box-1-js">
+            <button type="button">360 파노라마</button>
+            <button type="button">실감형 VR</button>
+          </div>
+        </div>
+
+        <!-- 하단 핀 -->
+        <div class="marker_content_2" id="marker-content-2-js">
+          <img src="./assects/img/marker.svg" class="pin_2" alt="상단 핀2" />
+          <div class="marker__box2" id="marker-box-2-js">
+            <button type="button">360 파노라마</button>
+            <button type="button">실감형 VR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mm02__btn__container">
+        <div class="menu">
+          <input
+            type="checkbox"
+            class="menu-open"
+            name="menu-open"
+            id="menu-open"
+          />
+          <label class="menu-open-button" for="menu-open">
+            <span class="hamburger hamburger-1"></span>
+            <span class="hamburger hamburger-2"></span>
+            <span class="hamburger hamburger-3"></span>
+          </label>
+
+          <div class="menu-item">
+            <div id="marker-hidden-js">
+              <img
+                src="./assects/img/marker.svg"
+                alt="마커 숨기기"
+                class="marker_hidden"
+              />
+              <span>핀 숨기기</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/wheelzoom_v2.js"></script>
+  </body>
+</html>
